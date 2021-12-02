@@ -9,6 +9,9 @@
 		$('#bcoat').on('click', function(){
 			$('#check').html('<img src=https://m.media-amazon.com/images/I/610FFOfbb0L._AC_UX679_.jpg alt="Big Coat"width=200" height="300">')
 		});
+		$('#bcoat').on('click', function(){
+			$('#answer').html('YES!')
+		});
 	});
 	</script>
 	<style>
@@ -27,18 +30,26 @@
 			align-items: center;
          }
 		button {margin-right: 1em;
+				margin-bottom: 1em;
 			font-weight: bold;
 			}
-			</style>
+		#answer { font-weight: bold;
+				  font-size: 3em;
+		
+		}	
+		</style>
 </head>
 <body>
 	<h1>Do I Need To Wear A Big Coit?</h1>
 	<p id="check">
 	Click below to see if the weather is cold enough to warrant wearing your big coat
 	</p>
+	<p id="answer"></p>
     <div class="button">
     <button type="button" id="bcoat">Big Coit Weather Check</button>
     </div>
-      
+	<p> Don't own a Big Coat? Click below for deals on the Biggest Coats</p>
+	<p><a href="https://www.amazon.co.uk/s?k=big+coat&ref=nb_sb_noss_2"><img src="bigcoat.jpg"></p>
+	   
 </body>
 </html>
